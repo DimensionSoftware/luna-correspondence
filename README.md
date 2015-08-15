@@ -4,6 +4,4 @@ Uploading this for nostalgia. All the good parts written by @khoerling, all the 
 
 ## Defcon presentation
 
-Note the terror in @markhuge's voice during his first public speaking event.
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/3jqr9dwJ8O4" frameborder="0" allowfullscreen></iframe>
+Note the terror in @markhuge's voice during his first public speaking event: https://www.youtube.com/embed/3jqr9dwJ8O4
