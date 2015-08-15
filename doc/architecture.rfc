@@ -1,0 +1,19 @@
+
+Luna's Finalized Architectural Plan
+
+
+Activity Diagram: Luna's Optimum Work Flow
+
+* Threads are required for best implimentation of this model (do away with fork())
+			
+			 - receive queue (orders packets and outputs finalized data)
+			/
+		 - receiver 1
+		 - receiver 2
+		 - receiver #n
+		/
+initialize	- 
+		\
+		 - transmitter 1
+		 - transmitter 2
+		 - transmitter #n

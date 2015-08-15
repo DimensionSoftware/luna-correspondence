@@ -1,0 +1,26 @@
+
+0.0.1  Unreleased
+	- initial public release
+
+Gamma  Tue Dec 17 06:50:51 PST 2002
+	- all configuration pulls from user file
+	- linked list class supports masking capability
+	- luna configuration script added
+
+Beta   Sun Dec 1 03:29:14 PST 2002
+	- addition of user configuration files
+	- stability improvements
+
+Alpha  Wed Nov 27 03:26:27 PST 2002
+	- basic transmit/receive is functional
+
+
+Upcoming or Planned Features
+	- Better error/overflow detection
+		`- libmib (http://www.mibsoftware.com/libmib/astring)
+		`- libsafe (http://www.bell-labs.com/org/11356/libsafe.html) -fomit-frame-pointer in Makefile
+		`- strlcat + strlcpy
+	- PGP encoding plugin
+	- Base64 encoding plugin
+	- add your feature here (email: Smurfboy <smurfboy@chungsdonutshop.com>)
+

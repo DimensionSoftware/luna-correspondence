@@ -1,0 +1,5 @@
+
+Distributed
+	`- Using broadcast hosts to relay massive amounts of data.
+	`- Setting Luna to relay its own traffic ala distributed Luna farms
+

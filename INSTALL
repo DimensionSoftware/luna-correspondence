@@ -1,0 +1,48 @@
+
+	1. Requirements
+	---------
+These tools are necessary for Luna to successfully compile:
+Standard GNU tools <http://www.gnu.org/>
+Libpcap <http://www.tcpdump.org/>
+
+
+	2. Building
+	---------
+After ensuring the aforementioned requirements are properly installed, do the following:
+foo$ make
+foo$ ./luna
+
+
+*** Following are instructions for a manual configuration of Luna.  Please re-build luna or run ./configure.pl for the automatic configuration.
+
+	3. Users
+	---------
+Finally, at least one user file must be created.  Place the files in the './users' directory with file names
+to match the intended user name.  Following is an example for the included (assumed) user, 'default' (./users/default):
+---- BEGIN FILE ----
+# Protocol Plugin
+packet-blasting
+
+# Encoding Plugin
+blowfish
+
+# Random Seed
+1234567890
+
+# Generate This Many Random Numbers
+1000
+
+# Relay hosts below
+hostname.net
+hostname.com
+---- SNIP ----
+
+
+	Testing
+	---------
+Luna has been tested to build on the following operating systems/architectures:
+Apple's OSX/PowerPC
+FreeBSD/x86
+Linux/x86
+
+Please aware us of any successful builds from other architectures.

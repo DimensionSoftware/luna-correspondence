@@ -1,0 +1,107 @@
+Title:  ICMP Stealth Dispersal Client/Server Framework
+For: Luna Correspondence
+Author: aRgus
+Date:   10.2.02
+
+
+=[ Foreword ]-----------------------------------------
+
+This document serves as a personal reference to myself and those who may become involved in this project at a later date. Therefore it assumes knowledge of the ICMP bounce procedure, and the nature of the project itself. This is likely to be added to, and modified on a regular basis.
+
+
+=[ Packet sequence and structure ]---------------------
+
+
+This initial model uses a p2p instant messaging system, as this type of transmission is ideal for such an inefficient method of transmitting data. 
+
+Due to a lack of a maintained connection between 2 fixed hosts, a session will be initialized with the first packet containing a return address in the data field rather than in the header. Once accepted the corresponding ack will be sent to acknowledge the initialization request:
+
+1st SYN:
+
+  _______________________
+  | Forged header        |
+  |----------------------|
+  | SYN Byte | Return IP |
+  |----------------------|
+
+
+Initialization ack:
+
+  _______________________
+  | Forged header        |
+  |----------------------|
+  | ACK Byte | Return IP |
+  |----------------------|
+  
+
+Once a session has been established, data will be sent via any number of hosts using the packet structure below:
+
+
+  _______________________
+  | Forged header        |
+  |----------------------|
+  | Syn/ack Byte | Return|
+  |----------------------|
+  | SEQ # |    DATA      |
+  |--------              |
+  |----------------------|
+
+
+****** NOTE *****************************************************************************
+
+With the exception of the header, all the data in the data gram is in the PAYLOAD of the packet, and parsed exclusively by the client on the receiving end. All this data is conceptually intended to be encrypted as a single payload.
+
+*****************************************************************************************
+
+
+=[ As this relates to secure communication ]---------------------------------------
+
+ 
+
+1. No standard ID/data should be implemented.
+
+ We don't want a packet to be identified and flagged as an
+ "ICMP bounce client packet". If you can scan/filter these
+ packets, the whole concept is void.
+
+2. Packets should remain unidentifiable.
+
+ Clients should handle all error checking/Session ID handling etc.
+ 
+  It is very possible for a man-in-the-middle attack to be implemented
+ on a flawed client, as "middle men" are your only method of data
+ transportation. One could ICMP reply false data etc., into a poorly
+ designed client.
+
+ All authentication should be done IN THE DATA by the clients themselves.
+
+ The simplest method for authenticating the integrity of such a transmission
+ is to encrypt data at both ends. If the data comes through as garbage, it's
+ not your packet.
+
+ 
+3. The return address field SHOULD NOT be in plain text.
+
+
+ This is pretty self explanatory, and it's implications should be obvious.
+
+ In any event, this was designed to be an encrypted payload protocol in the first
+ place.
+
+ 
+
+=[ Misc ]------------------------------------------------
+
+ 
+
+- I was breaking down byte allocation within the packets, but have decided not to go that far into it, until I/we have decided on an authentication method. (You can't know how much to allocate to data, if you don't know how much you need for sequence/auth/reply etc.)
+
+
+- Key transmission isn't really feasible via ICMP echo. Not in a practical manner anyhow. Having each other's pub key before hand is probably the best method of encrypting data. Certificates issued each session etc., aren't really viable at this point, and lend themselves to man-in-the-middle attacks.
+
+It's not that difficult to implement a PGP/GPG/etc module into a client.
+
+- This brings me to another point: the client should do EVERYTHING. All the packet needs to do is carry a garbage (encrypted) payload to a host with a forged header and bounce it. The entire data gram will be encrypted into one chunk and parsed at the client end.
+
+To increase security, you could as far as to dynamically assign a data gram to each session, the format of which would be sent via the encrypted SYN packet. This way patterns would not be easily established within packet structures to break the payload into chunks.
+

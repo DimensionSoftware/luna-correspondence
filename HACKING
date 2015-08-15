@@ -1,0 +1,29 @@
+
+	On Garbage Collection
+	---------
+Since no garbage collection system is available, everyone must play nice, coding responsibly
+by destroying their objects when finished and making sure not to dispose of active objects.
+Most importantly, think before typing -- it will save thought in the long haul.
+
+
+	On Coding Style
+	---------
+Please preserve the NeXTish conventions to maintain proper code posterity. 
+Refer to the following document if unsure what the above contract is asking:
+http://www.stepwise.com/Articles/Technical/2002-10-13.01.html
+
+
+	On Architecture
+	---------
+Luna (figures input/output (stdin, file, etc ...))
+	`- plugin factory
+		`- protocol plugin (communication (udp style, tcp style, etc ...))
+		`- encoding plugin (pgp, base64, etc ...)
+
+
+	On Pragmatics
+	---------
+More on this soon.
+
+
+Most of all, enjoy Luna, it's good for the soul.

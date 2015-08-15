@@ -1,0 +1,15 @@
+# protocol plugin [packet-blasting]: 
+packet-blasting
+
+# encoding plugin [blowfish]: 
+blowfish
+
+# random seed [1234567890]: 
+1234567890
+
+# random number count [1000]: 
+1000
+
+# 1] 
+
+
