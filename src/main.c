@@ -27,7 +27,7 @@ Email: keith@lbox.org  */
 /* ---------
    Luna Correspondence
 
-	Copyleft 2002 Smurfboy <smurfboy@chungsdonutshop.com>
+	Copyleft 2002 Smurfboy <keith@dimensionsoftware.com>
      
 	This program is free software; you can redistribute it and/or modify it under the terms of the GNU General
 	Public License as published by the Free Software Foundation; either version 2 of the License, or (at your
@@ -44,7 +44,7 @@ Email: keith@lbox.org  */
    Feedback
 
 	If you've found this source code useful, I'd love to hear about it.
-	Please send an email to smurfboy@chungsdonutshop.com
+	Please send an email to keith@dimensionsoftware.com
 
 */
 

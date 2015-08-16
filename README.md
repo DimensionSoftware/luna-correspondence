@@ -1,13 +1,15 @@
-# Luna Correspondence
+Luna Correspondence
+===================
 
-Luna is an anonymous finitely improbable data transfer and security nexus.
+An anonymous, finitely improbable data transfer and security nexus.
+-------------------------------------------------------------------
 
 
 ## Authors
 
-Argus <argus@chungsdonutshop.com>
-Day-Jay <d4yj4y@chungsdonutshop.com>
-Smurfboy <smurfboy@chungsdonutshop.com>
+* Argus <mark@markwilkerson.me>
+* Day-Jay <d4yj4y@chungsdonutshop.com>
+* Smurfboy <smurfboy@chungsdonutshop.com>
 
 Please send source code modifications and changes to smurfboy@chungsdonutshop.com
 Any feedback is warmly welcomed, thank you.
@@ -17,14 +19,18 @@ Any feedback is warmly welcomed, thank you.
 The Moon Bounce Team
 All the contributers who offered feedback to previous versions.
 
-## Defcon presentation
+## Defcon Presentation
 
 Note the terror in @markhuge and @khoerling's voices during their first public speaking event (we're really big in Japan):
-[![Defcon 11 Panel on The Luna Correspondence Protocol](https://www.youtube.com/embed/3jqr9dwJ8O4/0.jpg)](https://www.youtube.com/embed/3jqr9dwJ8O4)
+https://www.youtube.com/embed/3jqr9dwJ8O4
 
-## Toorcon presentation
+## Toorcon Presentation
 
-COMING SOON
+MIA
+
+## 2015 Update
+
+It has become increasingly more difficult to sp00f source.
 
 ## GPL License
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General
