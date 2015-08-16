@@ -20,7 +20,7 @@ All the contributers who offered feedback to previous versions.
 ## Defcon presentation
 
 Note the terror in @markhuge and @khoerling's voices during their first public speaking event (we're really big in Japan):
-[![Defcon 11 Panel on The Luna Correspondence Protocol](https://www.youtube.com/embed/3jqr9dwJ8O4/4.jpg)](https://www.youtube.com/embed/3jqr9dwJ8O4)
+[![Defcon 11 Panel on The Luna Correspondence Protocol](https://www.youtube.com/embed/3jqr9dwJ8O4/0.jpg)](https://www.youtube.com/embed/3jqr9dwJ8O4)
 
 ## Toorcon presentation
 
