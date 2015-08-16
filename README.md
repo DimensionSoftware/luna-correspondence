@@ -2,7 +2,6 @@ Luna Correspondence
 ===================
 
 An anonymous, finitely improbable data transfer and security nexus.
--------------------------------------------------------------------
 
 
 ## Authors
