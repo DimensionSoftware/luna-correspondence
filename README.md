@@ -8,7 +8,7 @@ An anonymous, finitely improbable data transfer and security nexus.
 
 * Argus <mark@markwilkerson.me>
 * Day-Jay <d4yj4y@chungsdonutshop.com>
-* Smurfboy <smurfboy@chungsdonutshop.com>
+* sMURFBOy <keith@hoerling.com>
 
 Please send source code modifications and changes to smurfboy@chungsdonutshop.com
 Any feedback is warmly welcomed, thank you.
